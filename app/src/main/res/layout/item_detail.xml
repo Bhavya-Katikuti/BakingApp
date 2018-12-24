@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailFragment" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/recepieimg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_width"
+                android:src="@drawable/novideo"
+                />
+
+            <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                android:id="@+id/exoplayer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/player_height">
+
+            </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:layout_marginTop="@dimen/rele_margin_top" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/rela_margin_left"
+            android:layout_marginTop="@dimen/rele_margin_top">
+
+            <ImageView
+                android:id="@+id/leftarrow"
+                android:layout_alignParentStart="true"
+                android:layout_width="@dimen/image_width"
+                android:layout_height="@dimen/image_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:src="@drawable/backward"
+                android:layout_alignParentLeft="true" />
+
+            <ImageView
+                android:id="@+id/rightarrow"
+                android:layout_width="@dimen/image_width"
+                android:layout_alignParentEnd="true"
+                android:layout_height="@dimen/image_height"
+                android:layout_marginRight="@dimen/margin_right"
+                android:src="@drawable/forward"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
